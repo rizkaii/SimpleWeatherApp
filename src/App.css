@@ -1,0 +1,119 @@
+/* App.css */
+
+/* Resetting margin, padding, and setting box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Dark mode background */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2e2e2e, #1c1c1c);
+  color: #f4f4f4;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.app-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #00c6ff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Styling search bar and button */
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 2px solid #333;
+  margin-right: 10px;
+  width: 70%;
+  max-width: 250px;
+  background-color: #2d2d2d;
+  color: #f4f4f4;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #00c6ff;
+  background-color: #3b3b3b;
+}
+
+.search-button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #00c6ff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: #0072b1;
+  transform: scale(1.05);
+}
+
+.search-button:focus {
+  outline: none;
+}
+
+/* Styling the weather card */
+.weather-card {
+  background-color: #333;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.weather-card h2 {
+  color: #00c6ff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.weather-card p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .search-input {
+    width: 65%;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
