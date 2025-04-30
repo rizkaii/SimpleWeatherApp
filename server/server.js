@@ -6,7 +6,7 @@ const port = 5000;
 
 app.use(cors()); // Mengaktifkan CORS agar frontend bisa mengakses backend dari port yang berbeda
 
-const API_KEY = 'afc25cd713036b28410bb21f7b837419'; // Ganti dengan API key Anda yang benar
+const API_KEY = 'API HERE'; // Ganti dengan API key Anda yang benar
 
 // Route untuk mengambil data cuaca
 app.get('/weather', async (req, res) => {
